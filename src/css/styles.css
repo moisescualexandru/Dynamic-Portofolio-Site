@@ -109,7 +109,9 @@ html {
       text-transform: uppercase;
       font-family: 'Amatic SC', cursive;
       text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-      font-size: 2em;
+      font-size: 1.5em;
+      text-align: left;
+      padding-left: 10px;
     }
 
     p.section-title {
@@ -133,14 +135,18 @@ html {
     .contact > p {
       font-size: 25px;
       margin: 5px;
-      color: ;
+      text-align: center;
     }
 
-    .contact > p > a {
+    p > a {
       color: white;
       text-decoration-line: none;
     }
 
-    .contact > p > a:hover {
+    p > a:hover {
       color: grey;
+    }
+
+    p.project-link {
+      font-size: 3em;
     }
