@@ -70,12 +70,8 @@ html {
     }
 
     .profile {
-      /*display: block;*/
       padding: 5px;
       height: 31%;
-/*      justify-content: center;
-      align-items: center;*/
-      /*flex: 1;*/
     }
 
     .profile > p {
@@ -112,6 +108,7 @@ html {
       font-size: 1.5em;
       text-align: left;
       padding-left: 10px;
+      padding-right: 10px;
     }
 
     p.section-title {
