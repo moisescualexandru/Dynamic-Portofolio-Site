@@ -13,7 +13,7 @@ function toggleOpen() {
       panel.classList.remove('open');
       panel.classList.remove('open-active');
       panel.classList.remove('unblur');
-    })  
+    })
     this.classList.toggle('open');
     this.classList.add('unblur');
     this.scrollIntoView();
@@ -27,7 +27,7 @@ function toggleActive(e) {
     if (this.classList.contains('panel3')) {
       document.getElementById('mail').style.display='block';
     }
-  } 
+  }
 }
 
 function clearBlur() {
