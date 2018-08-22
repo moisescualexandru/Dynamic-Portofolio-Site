@@ -156,6 +156,13 @@ html {
       }
     }
 
+    @media screen and (max-width: 768px) {
+      .panel1 { background-image:url('../img/Neighborhood Restaurant.png'); }
+      .panel2 { background-image:url('../img/myreads.png'); }
+      .panel4 { background-image:url('../img/Classic Arcade Game.png'); }
+      .panel5 { background-image:url('../img/Memory Game.png'); }      
+    }
+
     @media screen and (max-width: 700px) {
       .panels {
         display: block;
@@ -164,35 +171,45 @@ html {
         overflow-y: scroll;
       }
 
+      .panel1 { background-image:url('../img/Neighborhood Restaurant.png'); }
+      .panel2 { background-image:url('../img/myreads.png'); }
+      .panel4 { background-image:url('../img/Classic Arcade Game.png'); }
+      .panel5 { background-image:url('../img/Memory Game.png'); }
+
       .panel {
         display: block;
-        height: 33%;
-        width: 100;
-        transition: height 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-                font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
-        flex 0.7s cubic-bezier(0.69,-0.19, 0.7,-0.11),
-        background 0.2s;;
+        height: 80%;
+        width: 100%;
+        transition: height 0.5s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+                font-size 0.5s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+                flex 0.5s cubic-bezier(0.69,-0.19, 0.7,-0.11),
+                background 0.2s;
+        border: 20px groove grey;
       }
       
       .panel > div {
         font-size: 3vh;
+        text-shadow: none;
+        font-weight: 100px;
       }
 
       .panel > *:first-child {
         transform: translateX(-120%);
-        font-size: 3vw;
-        height: 45%;
+        font-size: 3.5vw;
+        height: 40%;
       }
 
       .panel.open-active > *:first-child {
         transform: translateX(0);
-        background-color: rgba(245, 245, 220, 0.8);
+        background-color: rgb(255, 255, 255);
+        background-color: rgba(255, 255, 255, 0.8);
         color: rgb(48, 48, 48);
+
       }
 
       .panel > *:last-child {
         transform: translateX(120%);
-        height: 25%;
+        height: 30%;
       }
 
       .panel.open-active > *:last-child {
@@ -200,11 +217,11 @@ html {
       }
 
       .panel.open-active {
-        height: 50%;
+        height: 100%;
       }
 
       div.contact {
-        font-size: 3.5vw;
+        font-size: 5vw;
         text-align: center;
         display: block;
         overflow-x: hidden;

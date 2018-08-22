@@ -16,7 +16,7 @@ function toggleOpen() {
     })
     this.classList.toggle('open');
     this.classList.add('unblur');
-    this.scrollIntoView();
+    this.scrollIntoView({behavior: 'smooth', block: 'start'});
   }
 }
 
