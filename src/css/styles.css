@@ -22,7 +22,7 @@ html {
     .panels {
       /*min-height:100vh;*/
       height: 100vh;
-      /*overflow: hidden;*/
+      overflow: hidden;
       display: flex;
       width: 100%;
     }
@@ -117,10 +117,6 @@ html {
       overflow: auto;
     }
 
-    div > p {
-      /*font-size: 1.9vw;*/
-    }
-
     div.section-title {
       font-size: 3.0vw;
     }
@@ -129,24 +125,19 @@ html {
       flex: 5;
     }
 
-/*    .contact {
-      display: block;
-      padding: 5px;
-    }*/
-
     div.contact {
-      font-size: 3vw;
+      font-size: 2.3vw;
       text-align: center;
       display: block;
       overflow-x: hidden;
     }
 
-    div > a {
+    div > p > a, div > a {
       color: white;
       text-decoration-line: none;
     }
 
-    div > a:hover {
+    div > p > a:hover, div > a:hover {
       color: grey;
     }
 
@@ -167,9 +158,11 @@ html {
     @media screen and (max-width: 700px) {
       .panels {
         display: block;
+        overflow: scroll;
       }
 
       .panel {
         flex-direction: row;
+        height: 50%;
       }
     }
