@@ -164,7 +164,6 @@ html {
       }
 
       .panel {
-/*        flex-direction: row;*/
         display: block;
         height: 33%;
         width: 100;
