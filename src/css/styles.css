@@ -50,7 +50,7 @@ html {
       cursor: pointer;
     }
 
-    p, .profile {
+    div, .profile {
       background-color: rgba(0,0,0,0.75);
     }
 
@@ -88,9 +88,10 @@ html {
 
     img {
       border-radius: 50%;
-      width: 100px;
-      height: 100px;
+      width: 20%;
+      /*height: 100px;*/
       margin: 0;
+      margin-right: 10px;
     }
 
     .panel > *:first-child {
@@ -111,49 +112,58 @@ html {
       transform: translateY(0);
     }
 
-    .panel p {
+    .panel div {
       /*text-transform: uppercase;*/
       font-family: 'Shadows Into Light', cursive;
       text-shadow:0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-      font-size: 1.5em;
+      font-size: 2.5vh;
       text-align: left;
       padding-left: 10px;
       padding-right: 10px;
+      height: 31%;
+      overflow: auto;
     }
 
-    p.section-title {
-      font-size: 2.5em;
+    div > p {
+      /*font-size: 1.9vw;*/
+    }
+
+    div.section-title {
+      font-size: 3.0vw;
     }
 
     .panel.open {
       flex: 5;
     }
 
-    .profile > p {
+/*    .profile > div {
       font-size: 25px;
       background-color: transparent;
-    }
+    }*/
 
     .contact {
       display: block;
       padding: 5px;
     }
 
-    .contact > p {
-      font-size: 25px;
-      margin: 5px;
+    div.contact {
+      font-size: 3vh;
       text-align: center;
     }
 
-    p > a {
+    div > a {
       color: white;
       text-decoration-line: none;
     }
 
-    p > a:hover {
+    div > a:hover {
       color: grey;
     }
 
-    p.project-link {
-      font-size: 3em;
+    div.project-link {
+      font-size: 3vw;
+    }
+
+    @media screen and (max-width: 1180px) {
+
     }
