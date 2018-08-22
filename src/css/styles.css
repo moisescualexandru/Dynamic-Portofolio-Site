@@ -158,11 +158,55 @@ html {
     @media screen and (max-width: 700px) {
       .panels {
         display: block;
-        overflow: scroll;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: scroll;
       }
 
       .panel {
-        flex-direction: row;
+/*        flex-direction: row;*/
+        display: block;
+        height: 33%;
+        width: 100;
+        transition: height 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+                font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+        flex 0.7s cubic-bezier(0.69,-0.19, 0.7,-0.11),
+        background 0.2s;;
+      }
+      
+      .panel > div {
+        font-size: 3vh;
+      }
+
+      .panel > *:first-child {
+        transform: translateX(-120%);
+        font-size: 3vw;
+        height: 45%;
+      }
+
+      .panel.open-active > *:first-child {
+        transform: translateX(0);
+        background-color: rgba(245, 245, 220, 0.8);
+        color: rgb(48, 48, 48);
+      }
+
+      .panel > *:last-child {
+        transform: translateX(120%);
+        height: 25%;
+      }
+
+      .panel.open-active > *:last-child {
+        transform: translateX(0);
+      }
+
+      .panel.open-active {
         height: 50%;
+      }
+
+      div.contact {
+        font-size: 3.5vw;
+        text-align: center;
+        display: block;
+        overflow-x: hidden;
       }
     }
