@@ -5,6 +5,9 @@ function toggleOpen() {
     this.classList.remove('open');
     this.classList.remove('open-active');
     this.classList.remove('unblur');
+    if (this.classList.contains('panel3')) {
+      document.getElementById('mail').style.display='none';
+    }
   } else {
     panels.forEach(panel => {
       panel.classList.remove('open');
@@ -20,6 +23,9 @@ function toggleActive(e) {
   if (e.propertyName.includes('flex') && e.target.classList.contains('open')) {
     this.classList.add('open-active');
     this.classList.add('unblur');
+    if (this.classList.contains('panel3')) {
+      document.getElementById('mail').style.display='block';
+    }
   } 
 }
 
