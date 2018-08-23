@@ -119,7 +119,7 @@ html {
     }
 
     div.section-title {
-      font-size: 3.0vw;
+      font-size: 2.8vw;
     }
 
     .panel.open {
@@ -144,6 +144,8 @@ html {
 
     div.project-link {
       font-size: 3vw;
+      display: block;
+      text-align: center;
     }
 
     #mail {
@@ -153,6 +155,12 @@ html {
     @media screen and (max-width: 1180px) {
       .panel > *:first-child {
         font-size: 1.7vw;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      .classic {
+        display: none;
       }
     }
 
